@@ -6,21 +6,25 @@ import LogoRedpanda from './components/LogoRedpanda'
 import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
 import About from './components/About'
-import Orange from './components/Orange'
+import Desktop from './components/Desktop'
 
-const Spacer = styled.div`
-height: 400px;
+
+const Rightcorner = styled.div`
+position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  margin: ${props => props.margin}
 `
 
 const PropsBox = styled.div(props => ({
   background: props.background,
-  height: '1024px',
+  height: '1224px',
   width: '99px',
   position: 'absolute',
   margin: props.margin,
-  
-
 }));
+
 const Propsdiv = styled.div(props => ({
   padding: props.padding
 
@@ -30,36 +34,45 @@ const Propsdimg = styled.img(props => ({
   margin: props.margin
 
 }));
-
 function App() {
   return (
     <div>
+      <Propsdiv padding="0px 0px 0px 0px">
+<Rightcorner margin="0px 300px 0px 0px"><Kmutt /></Rightcorner><Rightcorner margin="0px 200px 0px 0px"><Sit /></Rightcorner>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+        <Desktop />
+        </div>
+      </div>
+      </div>
+
+      </Propsdiv>
       <Propsdiv padding="0px 0px 400px 0px">
       <PropsBox background="#F78A68" />
-      <PropsBox background="#4F4F4F" margin="0px 0px 0px 134px" />
+    <PropsBox background="#4F4F4F" margin="0px 0px 0px 134px" />
       <div class="container">
   <div class="row align-items-start">
     <div class="col-lg-10">
+    
     </div>
     <div class="col-lg-auto">
       <Kmutt />
     </div>
     <div class="col-lg-auto">
       <Sit />
+      
     </div>
   </div>
   <div class="row align-items-center">
-    <div class="col-lg">
-    </div>
-    <div class="col-lg">
+   
+    <div class="col-lg-auto">
       <LogoRedpanda />
     </div>
-    <div class="col-lg">
-    </div>
+  
   </div>
 </div>
-      <PropsBox background="#F78A68" margin="-804px 0px 0px 1804px" />
-      <PropsBox background="#4F4F4F" margin="-804px 0px 0px 1668px" />
+      
    </Propsdiv>
    <Propsdiv padding="0px 0px 400px 0px">
    
@@ -77,10 +90,16 @@ function App() {
       </div>
       </div>
   
-
+      <PropsBox background="#F78A68" margin="-2209px 0px 0px 1804px" />
+<PropsBox background="#4F4F4F" margin="-2209px 0px 0px 1668px" />
    </Propsdiv>
+   
     </div>
   );
 }
 
 export default App;
+{/* <PropsBox background="#F78A68" />
+<PropsBox background="#4F4F4F" margin="0px 0px 0px 134px" />
+<PropsBox background="#F78A68" margin="-804px 0px 0px 1804px" />
+<PropsBox background="#4F4F4F" margin="-804px 0px 0px 1668px" /> */}

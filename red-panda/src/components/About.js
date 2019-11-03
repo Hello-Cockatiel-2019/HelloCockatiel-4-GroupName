@@ -42,7 +42,8 @@ color: #000000;
 `
 const Icon = styled.img`
 margin: ${props => props.margin}
-
+border: 3px solid #000000;
+padding: 10px 10px 10px 10px;
 `
 
     const Border = styled.div`
@@ -58,8 +59,8 @@ export default class About extends Component {
                 <Text>slightly larger than a domestic cat with a bear-like body and thick russet fur. The belly and limbs are black, and there are white markings on the side of the head and above its small eyes. Red pandas are very skillful and acrobatic animals that predominantly stay in trees. </Text>
                 <Icon src="images\food.jpg" margin="200px 0px 0px 130px" alt="food"/>
                 <Texticon margin="-60px 0px 0px 230px">Omnivored</Texticon>
-                <Icon src="images\tree.jpg" margin="-85px 0px 0px 470px" alt="tree"/>
-                <Texticon margin="-80px 0px 0px 550px">Live On Tree</Texticon>
+                <Icon src="images\tree.jpg" margin="-110px 0px 0px 470px" alt="tree"/>
+                <Texticon margin="-80px 0px 0px 575px">Live On Tree</Texticon>
             </div>
         )
     }
