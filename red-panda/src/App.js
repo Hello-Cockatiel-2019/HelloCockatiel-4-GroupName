@@ -7,7 +7,7 @@ import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
 import About from './components/About'
 import Orange from './components/Orange'
-
+import Location from './components/Location'
 const Spacer = styled.div`
 height: 400px;
 `
