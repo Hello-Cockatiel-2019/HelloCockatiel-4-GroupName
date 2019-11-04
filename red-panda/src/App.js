@@ -9,6 +9,12 @@ import About from './components/About'
 import Desktop from './components/Desktop'
 import Help from './components/Help'
 import Contact from './components/Contact'
+import Hunter from './components/Hunter'
+import Repro1 from './components/Repro1'
+import Repro2 from './components/Repro2'
+import Pet1 from './components/Pet1'
+import Pet2 from './components/Pet2'
+import Pet3 from './components/Pet3'
 
 const Rightcorner = styled.div`
 position: absolute;
@@ -38,10 +44,16 @@ background-color: #DE4D20;
 padding: 0px 0px 400px 0px;
 `
 const Propsdimg = styled.img(props => ({
-  padding: props.padding,
-  margin: props.margin
+padding: props.padding,
+margin: props.margin
 
 }));
+const Img = styled.img`
+height: ${props => props.height}
+width: ${props => props.width}
+margin: ${props => props.margin}
+border: ${props => props.border}
+`
 function App() {
   return (
     <div>
@@ -56,7 +68,7 @@ function App() {
       </div>
 
       </Propsdiv>
-      <Propsdiv class="Desktop2"padding="0px 0px 400px 0px">
+      <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
       <PropsBox background="#F78A68" />
       <PropsBox background="#4F4F4F" margin="0px 0px 0px 134px" />
 
@@ -85,10 +97,10 @@ function App() {
 <PropsBox background="#F78A68" margin="-1241px 0px 0px 2014px" />
 <PropsBox background="#4F4F4F" margin="-1241px 0px 0px 1874px" />
    </Propsdiv>
-      <Propsdiv class="AboutRedpanda"padding="0px 0px 400px 0px">
+      <Propsdiv class="AboutRedpanda" padding="0px 0px 400px 0px">
       <div class="container">
         <div class="row">
-        <Propsdimg src="images\redpanda1.jpg" alt="redpanda1" margin="0px 0px 0px -400px" />
+        <Propsdimg src="images\redpanda.jpg" alt="redpanda" margin="0px 0px 0px -400px" />
         <div class="col-lg-auto">
       </div>
           <div class="col-lg-4">
@@ -101,6 +113,63 @@ function App() {
   
       
    </Propsdiv>
+      <Propsdiv class="Reproduction" padding="0px 0px 400px 0px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-auto">
+              <Img src="images\redpanda3.jpg" alt="redpanda3" width="451px" height="338px" margin="0px 0px 0px -230px" />
+            </div>
+            <div class="col-lg-auto">
+              <Repro1 />
+            </div>
+            <div class="row">
+            <div class="col-lg-auto">
+             <Repro2 />
+            </div>
+            <div class="col-lg-auto">
+            <Img src="images\redpanda4.jpg" alt="redpanda4" width="520px" height="346px" margin="100px 0px 0px 0px" />
+            </div>
+            
+            
+            </div>
+          </div>
+        </div>
+      </Propsdiv>
+      <Propsdiv class="Pet" padding="0px 0px 400px 0px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-auto">
+              <Img src="images\redpanda5.jpg" alt="redpanda5" width="451px" height="338px" margin="0px 0px 0px -230px" />
+            </div>
+            <div class="col-lg-auto">
+              <Pet1 />
+            </div>
+            <div class="row">
+            <div class="col-lg-auto">
+              <Pet2 />
+            </div>
+            <div class="col-lg-auto">
+            <Img src="images\redpanda6.jpg" alt="redpanda6" width="520px" height="346px" margin="100px 0px 0px 0px" />
+            </div>
+            <div class="row">
+            <div class="col-lg-auto">
+              <Pet3 />
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </Propsdiv>
+      <Propsdiv class="Hunters" padding="0px 0px 400px 0px">
+    <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <Hunter />            
+            </div>
+          </div>
+            
+        </div>
+    </Propsdiv>
       <Propsdivcolor1 class="HelpRedpanda">
       
         <div class="container">
@@ -113,16 +182,17 @@ function App() {
         </div>
 
       </Propsdivcolor1>
-     <Propsdivcolor2 class="ContactUs">
-     <div class="container">
+      <Propsdivcolor2 class="ContactUs">
+      <div class="container">
           <div class="row">
             <div class="col-lg">
               <Contact />
             </div>
           </div>
             
-        </div>
+      </div>
      </Propsdivcolor2>
+      
     </div>
   );
 }

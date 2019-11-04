@@ -46,10 +46,10 @@ border: 3px solid #000000;
 padding: 10px 10px 10px 10px;
 `
 
-    const Border = styled.div`
-    border: 5px solid #000000;
-    box-sizing: border-box;
-    `
+const Border = styled.div`
+border: 5px solid #000000;
+box-sizing: border-box;
+`
 
 export default class About extends Component {
     render() {
