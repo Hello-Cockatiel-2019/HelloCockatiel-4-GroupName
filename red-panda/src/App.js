@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 import LogoRedpanda from './components/LogoRedpanda'
 import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
@@ -23,6 +25,8 @@ import Pet3 from './components/Pet3'
 import Behavior1 from './components/Behavior1'
 import Behavior2 from './components/Behavior2'
 import Behavior3 from './components/Behavior3'
+import Live from './components/Live'
+import Eat1 from './components/Eat1'
 
 const Rightcorner = styled.div`
 position: absolute;
@@ -63,6 +67,32 @@ width: ${props => props.width}
 margin: ${props => props.margin}
 border: ${props => props.border}
 padding: ${props => props.padding}
+`
+
+const Text = styled.div`
+width: 649px;
+height: 319px;
+margin: ${props => props.margin}
+
+font-family: Teko;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 34px;
+text-align: center;
+`
+const Navtext = styled.p`
+margin-top: 5px;
+margin-bottom: -5px;
+margin-left: 45%;
+
+font-family: Teko;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+
+color: #ffffff;
 `
 function App() {
   return (
@@ -112,7 +142,12 @@ function App() {
 
 
    </Propsdiv>
-      <Propsdiv class="AboutRedpanda" padding="0px 0px 400px 0px">
+
+   <nav class="navbar sticky-top navbar-dark bg-dark">
+  <Navtext>Red Panda</Navtext>
+</nav>
+      
+      <ScrollAnimation animateIn="fadeIn"><Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
       <div class="container">
         <div class="row">
         <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" />
@@ -120,17 +155,43 @@ function App() {
       </div>
           <div class="col-lg-4">
       <About  />
-     
-  
       </div>
       </div>
       </div>
   
       
    </Propsdiv>
-      {/* position */}
-      {/* eat */}
-      <Propsdiv class="Behavior" padding="0px 0px 400px 0px">
+      </ScrollAnimation>
+      <Propsdiv class="Possition" padding="0px 0px 400px 0px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <Img src="images\map.png" width="950px" height="1100px" margin="0px 0px 0px -400px" />
+              <Img src="images\place.png" width="50px" height="50px" margin="-1200px 0px 0px 0px" />
+              <Text margin="-675px 0px 0px -300px">เทือกเขาหิมาลัย</Text>
+            </div>
+            <div class="col-lg-6">
+<Live />
+            </div>
+          </div>
+        </div>
+      </Propsdiv> 
+
+      <Propsdiv class="Eat" padding="400px 0px 400px 0px">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-6"><Img src="images\pandaeat.jpg" width="553px" height="570px" margin="0px 0px 0px 0px" /></div>
+      <div class="col-lg-6"><Eat1 /></div>
+      <div class="row">
+      <div class="col-lg">icon</div>
+      </div>
+      <div class="row">
+      <div class="col-lg">content</div>
+      </div>
+      </div>  
+      </div>  
+      </Propsdiv> 
+      <Propsdiv class="Behavior" padding="400px 0px 400px 0px">
     <div class="container">
       <div class="row">
         <div class="col-lg"><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -100px"/></div>
