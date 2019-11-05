@@ -36,8 +36,8 @@ export default class Contact extends Component {
             <div>
                 <Texthead>Contact Us</Texthead>
                 <Line />
-               
-                <Img src="images\kmuttJPG.jpg" width="152px" height="152px" margin="70px 0px 0px 300px" border="10px solid #FFFFFF" />
+               <Img src="images\logosmall.jpg" width="152px" height="152px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
+                <Img src="images\kmuttJPG.jpg" width="152px" height="152px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
               
                 <Img src="images\sit.png" width="268px" height="86px" margin="70px 0px 0px 50px" />
             </div>

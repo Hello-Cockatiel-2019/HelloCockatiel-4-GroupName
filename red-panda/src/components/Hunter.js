@@ -25,20 +25,21 @@ padding-bottom: 200px;
 margin: ${props => props.margin}
 
 
-font-family: Oswald;
+font-family: Teko;
 font-style: normal;
 font-weight: normal;
-font-size: 48px;
-line-height: 71px;
+font-size: 36px;
+line-height: 52px;
 text-align: center;
 
 color: #000000;
 `
 
 const Text = styled.div`
-width: 649px;
-height: 319px;
+width: ${props => props.width}
+height: ${props => props.height}
 margin: ${props => props.margin}
+padding-bottom: 300px;
 
 font-family: Spectral;
 font-style: normal;
@@ -61,7 +62,7 @@ export default class Hunter extends Component {
     render() {
         return (
             <div>
-                <Texthead height="112px" width="850px" margin="0px 0px 0px 100px"><b>Things That Are A Threats To Red Pandas</b></Texthead>
+                <Texthead height="112px" width="850px" margin="0px 0px 0px 100px"><b>สิ่งที่เป็นภัยคุกคามต่อแพนด้าแดง</b></Texthead>
                 <Img src="images\snowleopard.png" alt="snowleopard" height="245px" width="245px" margin="0px 150px 0px 50px"/>
                 <Img src="images\mustelid.png" alt="mustelid" height="245px" width="245px" margin="0px 150px 0px 0px"/>
                 <Img src="images\human.png" alt="human" height="245px" width="245px" margin="0px 0px 0px 0px"/>
@@ -73,20 +74,21 @@ export default class Hunter extends Component {
                 
                  <Rectangle background="#F78A68" margin="-250px 50px 0px 650px" /> 
                  <Img src="images\redpanda6.png" alt="redpanda6" height="449px" width="487px" margin="-350px 0px 0px 600px"/>
-                <Text margin="75px 0px 0px 250px">หมีแพนด้าสีแดงจะพยายามหลบหนีโดยการวิ่งขึ้นไปบนหินหรือต้นไม้</Text>
-                <Text margin="75px 0px 0px 250px">หรือพยายามข่มขู่โดย</Text>
+                <Text height="129px" width="384px" margin="75px 0px 0px 175px">หมีแพนด้าสีแดงจะพยายามหลบหนีโดยการวิ่งขึ้นไปบนหินหรือต้นไม้</Text>
+                <Text height="129px" width="384px" margin="-300px 0px 0px 625px">หรือพยายามข่มขู่โดย ยืนอยู่บนขาหลังและขยายกรงเล็บ</Text>
                 <Texthead height="112px" width="1200px" margin="-100px 0px 50px 0px"><b>เหตุผลที่ทำไมแพนด้าแดงจึงเป็นสัตว์ใกล้สูญพันธุ์ </b></Texthead>
-                <Text margin="-75px 0px 50px 250px">แพนด้าแดงกำลังเผชิญกับภัยคุกคามหลายอย่างรวมถึงการตัดไม้ทำลายป่าไม้ไผ่เพิ่มความตายจากโรคไข้หัดสุนัขเนื่องจากการบุกรุก ของมนุษย์การสูญเสียที่อยู่อาศัยและการลักลอบล่าสัตว์ </Text>
+                <Text height="199px" width="649px" margin="-75px 0px 50px 250px">แพนด้าแดงกำลังเผชิญกับภัยคุกคามหลายอย่างรวมถึงการตัดไม้ทำลายป่าไม้ไผ่เพิ่มความตายจากโรคไข้หัดสุนัขเนื่องจากการบุกรุก ของมนุษย์การสูญเสียที่อยู่อาศัยและการลักลอบล่าสัตว์ </Text>
                 
                 <Icon src="images\food.jpg" margin="-200px 300px 0px 350px" alt="food1"/>
-                <Texthead height="62px" width="499px"margin="-150px 0px 0px 445px">Deforestation of Bamboo </Texthead>
+                <Texthead height="62px" width="600px"margin="-140px 0px 0px 400px">การตัดไม้ทำลายป่าของไม้ไผ่</Texthead>
                 
                 <Icon src="images\food.jpg" margin="-100px 300px 0px 350px" alt="food2"/>
-                <Texthead height="62px" width="499px"margin="-100px 0px 0px 370px">Lost of Habitats </Texthead>
+                <Texthead height="62px" width="499px"margin="-90px 0px 0px 370px">สูญเสียที่อยู่อาศัย</Texthead>
                 
                 <Icon src="images\food.jpg" margin="-100px 300px 0px 350px" alt="food3"/>
-                <Texthead height="62px" width="499px"margin="-100px 0px 0px 310px">Poaching</Texthead>
+                <Texthead height="62px" width="499px"margin="-90px 0px 0px 310px">การรุกล้ำ</Texthead>
             </div>
         )
     }
 }
+
