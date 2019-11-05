@@ -25,7 +25,7 @@ const Line = styled.div`
 width: 1300px;
 height: 0px;
 margin-left: -100px;
-
+background: #ffffff;
 border: 3px solid #FFFFFF;
 transform: rotate(-0.14deg)
 `

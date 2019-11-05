@@ -37,7 +37,7 @@ font-size: 60px;
 text-align: center;
 
 
-color: #7E7E7E;;
+color: #7E7E7E;
 
 `
 const Img = styled.img`
