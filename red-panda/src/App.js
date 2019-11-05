@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components'
 import LogoRedpanda from './components/LogoRedpanda'
 import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
+import Logosmall from './components/Logosmall'
 import About from './components/About'
 import Location from './components/Location'
 const Spacer = styled.div`
@@ -67,7 +67,7 @@ padding: ${props => props.padding}
 function App() {
   return (
     <div>
-      <Propsdiv class="Desktop1" padding="0px 0px 0px 0px">
+      {/* <Propsdiv class="Desktop1" padding="0px 0px 0px 0px">
 <Rightcorner margin="0px 300px 0px 0px"><Kmutt /></Rightcorner><Rightcorner margin="0px 200px 0px 0px"><Sit /></Rightcorner>
       <div class="container">
       <div class="row">
@@ -77,22 +77,26 @@ function App() {
       </div>
       </div>
 
-      </Propsdiv>
+      </Propsdiv> */}
       <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
-      <PropsBox background="#F78A68" />
-      <PropsBox background="#4F4F4F" margin="0px 0px 0px 134px" />
-
+      
       <div class="container">
+      <PropsBox background="#F78A68" margin="0px 0px 0px -400px"/>
+      <PropsBox background="#4F4F4F" margin="0px 0px 0px -250px" />
+
   <div class="row align-items-start">
-    <div class="col-lg-10">
+    <div class="col-lg-9">
     
     </div>
-    <div class="col-lg-auto">
-      <Kmutt />
+    <div class="col-lg-1">
+    <Logosmall />
+     
     </div>
-    <div class="col-lg-auto">
-      <Sit />
-      
+    <div class="col-lg-1">
+    <Kmutt />
+    </div>
+    <div class="col-lg-1">
+    <Sit />
     </div>
   </div>
   <div class="row align-items-center">
@@ -102,10 +106,11 @@ function App() {
     </div>
   
   </div>
+  <PropsBox background="#F78A68" margin="-990px 0px 0px 1260px" />
+<PropsBox background="#4F4F4F" margin="-990px 0px 0px 1410px" />
 </div>
 
-<PropsBox background="#F78A68" margin="-1241px 0px 0px 2014px" />
-<PropsBox background="#4F4F4F" margin="-1241px 0px 0px 1874px" />
+
    </Propsdiv>
       <Propsdiv class="AboutRedpanda" padding="0px 0px 400px 0px">
       <div class="container">
