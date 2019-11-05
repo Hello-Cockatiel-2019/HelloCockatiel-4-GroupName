@@ -4,7 +4,8 @@ import styled from 'styled-components'
 const Sit = styled.img`
 width: 166px;
 height: 53px;
-margin: 30px -100px -140px -30px;
+margin-top: 70px; 
+margin-left: 0px;
 `
 export default class KmuttSit extends Component {
     render() {

@@ -4,8 +4,7 @@ import styled from 'styled-components'
 const Textbox = styled.div`
 width: 514px;
 height: 150px;
-margin-left: 40%;
-margin-right: 300px;
+margin-left: 50%;
 margin-top: 15%;
 
 font-family: Staatliches;
@@ -14,11 +13,9 @@ font-weight: normal;
 font-size: 120px;
 line-height: 150px;
 text-align: center;
-color: #2C2C2C;
+color: #ffffff;
 
-background-color: #ffffff;
-border: 5px solid #B8B8B8;
-box-sizing: border-box;
+background-color: #FB7E49;
 
 `
 
@@ -28,7 +25,7 @@ box-sizing: border-box;
 const Text = styled.div`
 width: 652px;
 height: 64px;
-margin-left: 32%;
+margin-left: 40%;
 padding 16px;
 
 
@@ -45,10 +42,10 @@ color: #7E7E7E;;
 `
 const Img = styled.img`
 
-width: 677px;
-height: 741px;
+width: 488px;
+height: 488px;
 margin-top: 5%;
-margin-left: 30%;
+margin-left: 50%;
 padding-top: 2%;
 
 `
@@ -64,14 +61,11 @@ export default class LogoRedpanda extends Component {
     return (
 
      <div>
-       
-<Textbox>RED PANDA</Textbox>
-        
-        
+         <Img src="/images/logo.png" alt="Logo" />
+        <Textbox>RED PANDA</Textbox>
         <Text>cutest existence in the world.</Text>
-        <Img src="/images/logo2.jpg" alt="Logo" />
-        <Clound src="images/clound.png" margin="-520px 0px 0px -50px" width="468" height="468" />
-        <Clound src="images/clound.png" margin="-390px 0px 0px 620px" width="506" height="506" />
+      
+        
       </div>
 
 
