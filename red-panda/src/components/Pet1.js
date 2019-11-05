@@ -5,7 +5,7 @@ const Texthead = styled.div`
 width: 800px;
 height: 112px;
 padding-bottom: 100px;
-margin-top: -75px;
+margin-top: 10%;
 margin-left: 5%;
 
 font-family: Oswald;
@@ -16,7 +16,7 @@ line-height: 71px;
 
 color: #000000;
 `
-const Text = styled.div`
+const Text = styled.p`
 width: 649px;
 height: 152px;
 margin: ${props => props.margin}
@@ -34,8 +34,8 @@ export default class Pet extends Component {
     render() {
         return (
             <div>
-                <Texthead>Can You Keep a Red Panda as a Pet?</Texthead>
-                <Text margin="0px 0px 0px 50px">Although the red panda is cute and cuddly-looking and breeds well in captivity, there are several reasons it's not a common pet. A red panda needs a massive amount of fresh bamboo each day. It requires a large enclosure, canine distemper vaccination, and flea treatment (infestation can be lethal). Red pandas use anal glands to mark territory, producing a strong smell. </Text>
+                <Texthead>สามารถนำแพนด้าแดงมาเป็นสัตว์เลี้ยง</Texthead>
+                <Text margin="0px 0px 0px 50px">ถึงแม้ว่าหมีแพนด้าสีแดงน่ารักและดูน่ากอดและสายพันธุ์ที่ดีในการ ถูกจองจำมีหลายเหตุผลที่ไม่ใช่สัตว์เลี้ยงทั่วไป</Text>
            
             </div>
         )

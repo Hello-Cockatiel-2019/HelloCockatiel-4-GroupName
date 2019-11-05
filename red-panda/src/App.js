@@ -20,6 +20,9 @@ import Repro2 from './components/Repro2'
 import Pet1 from './components/Pet1'
 import Pet2 from './components/Pet2'
 import Pet3 from './components/Pet3'
+import Behavior1 from './components/Behavior1'
+import Behavior2 from './components/Behavior2'
+import Behavior3 from './components/Behavior3'
 
 const Rightcorner = styled.div`
 position: absolute;
@@ -59,6 +62,7 @@ height: ${props => props.height}
 width: ${props => props.width}
 margin: ${props => props.margin}
 border: ${props => props.border}
+padding: ${props => props.padding}
 `
 function App() {
   return (
@@ -106,7 +110,7 @@ function App() {
       <Propsdiv class="AboutRedpanda" padding="0px 0px 400px 0px">
       <div class="container">
         <div class="row">
-        <Propsdimg src="images\redpanda.jpg" alt="redpanda" margin="0px 0px 0px -400px" />
+        <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" />
         <div class="col-lg-auto">
       </div>
           <div class="col-lg-4">
@@ -119,47 +123,61 @@ function App() {
   
       
    </Propsdiv>
+      {/* position */}
+      {/* eat */}
+      <Propsdiv class="Behavior" padding="0px 0px 400px 0px">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg"><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -100px"/></div>
+        <div class="col-lg"><Behavior1 /></div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <Img src="images/redpanda1.jpg" alt="redpandastand" width="390px" height="306px" margin="0px 0px 0px 0px"/>
+<Behavior2 />
+        </div>
+        <div class="col-lg">
+          <Img src="images/redpanda2.jpg" alt="redpandastand" width="468px" height="306px" margin="0px 0px 0px 0px"/>
+<Behavior3 />
+          </div>
+      </div>
+      </div> 
+      </Propsdiv>
       <Propsdiv class="Reproduction" padding="0px 0px 400px 0px">
         <div class="container">
           <div class="row">
-            <div class="col-lg-auto">
-              <Img src="images\redpanda3.jpg" alt="redpanda3" width="451px" height="338px" margin="0px 0px 0px -230px" />
-            </div>
-            <div class="col-lg-auto">
+            <div class="col-lg">
               <Repro1 />
+  <Img src="images\redpanda3.jpg" alt="redpanda3" width="486px" height="477px" margin="-250px 0px 0px 600px" />
             </div>
-            <div class="row">
-            <div class="col-lg-auto">
+            <div class="w-100"/>
+            <div class="col-lg">
              <Repro2 />
             </div>
-            <div class="col-lg-auto">
-            <Img src="images\redpanda4.jpg" alt="redpanda4" width="520px" height="346px" margin="100px 0px 0px 0px" />
-            </div>
-            
-            
             </div>
           </div>
-        </div>
+       
       </Propsdiv>
       <Propsdiv class="Pet" padding="0px 0px 400px 0px">
         <div class="container">
           <div class="row">
             <div class="col-lg-auto">
-              <Img src="images\redpanda5.jpg" alt="redpanda5" width="451px" height="338px" margin="0px 0px 0px -230px" />
+            <Img src="images\redpanda4.jpg" alt="redpanda5" width="345px" height="376px" margin="0px 0px 0px -100px" />
             </div>
             <div class="col-lg-auto">
-              <Pet1 />
-            </div>
-            <div class="row">
-            <div class="col-lg-auto">
-              <Pet2 />
-            </div>
-            <div class="col-lg-auto">
-            <Img src="images\redpanda6.jpg" alt="redpanda6" width="520px" height="346px" margin="100px 0px 0px 0px" />
+           
+           
+             <Pet1 />
             </div>
             <div class="row">
             <div class="col-lg-auto">
               <Pet3 />
+            </div>
+            <div class="col-lg-auto">
+            </div>
+            <div class="row">
+            <div class="col-lg-auto">
+              
             </div>
             </div>
             </div>
