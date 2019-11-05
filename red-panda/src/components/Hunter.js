@@ -50,23 +50,33 @@ text-indent: 20px;
 
 color: #000000;
 `
+const Rectangle = styled.div`
+width: 357px;
+height: 243px;
+background: ${props => props.background}
+margin: ${props => props.margin}
+`
 
 export default class Hunter extends Component {
     render() {
         return (
             <div>
                 <Texthead height="112px" width="850px" margin="0px 0px 0px 100px"><b>Things That Are A Threats To Red Pandas</b></Texthead>
-                <Img src="images\snowleopard.png" alt="snowleopard" height="245px" width="245px" margin="0px 150px 0px 0px"/>
+                <Img src="images\snowleopard.png" alt="snowleopard" height="245px" width="245px" margin="0px 150px 0px 50px"/>
                 <Img src="images\mustelid.png" alt="mustelid" height="245px" width="245px" margin="0px 150px 0px 0px"/>
                 <Img src="images\human.png" alt="human" height="245px" width="245px" margin="0px 0px 0px 0px"/>
-                <Texthead height="112px" width="500px"margin="50px 0px 0px -130px">Snow Leopards</Texthead>
-                <Texthead height="112px" width="500px"margin="-200px 0px 0px 275px">Mustelids</Texthead>
-                <Texthead height="112px" width="500px"margin="-200px 0px 0px 660px">Humans</Texthead>
-                <Img src="images\redpanda7.jpg" alt="redpanda7" height="400px" width="254px" margin="0px 200px 0px 200px"/>
-                <img src="images\redpandastand.jpg" alt="redpandastand" height="398px" width="300px" margin="0px 0px 0px 0px"/>
-                <Text margin="75px 0px 0px 250px">a red panda will try to escape by running up a rock or tree. If cornered, it will stand on its hind legs and extend its claws to appear larger and threatening.</Text>
-                <Texthead height="112px" width="877px"margin="-100px 0px 50px 150px"><b>Reason Why Red Pandas Are Endanred Species</b></Texthead>
-                <Text margin="-75px 0px 50px 250px">The red panda faces multiple threats, including deforestation of bamboo, increased death from canine distemper due to human encroachment, habitat loss, and poaching for the pet and fur trades </Text>
+                <Texthead height="112px" width="500px" margin="50px 0px 0px -75px">เสือดาวหิมะ</Texthead>
+                <Texthead height="112px" width="500px" margin="-200px 0px 0px 325px">เพียงพอน</Texthead>
+                <Texthead height="112px" width="500px" margin="-200px 0px 0px 725px">มนุษย์</Texthead>
+                 <Img src="images\redpanda5.png" alt="redpanda5" height="526px" width="335px" margin="0px 0px 0px 200px"/> 
+                 <Rectangle background="#009B68" margin="-400px 50px 0px 200px" /> 
+                
+                 <Rectangle background="#F78A68" margin="-250px 50px 0px 650px" /> 
+                 <Img src="images\redpanda6.png" alt="redpanda6" height="449px" width="487px" margin="-350px 0px 0px 600px"/>
+                <Text margin="75px 0px 0px 250px">หมีแพนด้าสีแดงจะพยายามหลบหนีโดยการวิ่งขึ้นไปบนหินหรือต้นไม้</Text>
+                <Text margin="75px 0px 0px 250px">หรือพยายามข่มขู่โดย</Text>
+                <Texthead height="112px" width="1200px" margin="-100px 0px 50px 0px"><b>เหตุผลที่ทำไมแพนด้าแดงจึงเป็นสัตว์ใกล้สูญพันธุ์ </b></Texthead>
+                <Text margin="-75px 0px 50px 250px">แพนด้าแดงกำลังเผชิญกับภัยคุกคามหลายอย่างรวมถึงการตัดไม้ทำลายป่าไม้ไผ่เพิ่มความตายจากโรคไข้หัดสุนัขเนื่องจากการบุกรุก ของมนุษย์การสูญเสียที่อยู่อาศัยและการลักลอบล่าสัตว์ </Text>
                 
                 <Icon src="images\food.jpg" margin="-200px 300px 0px 350px" alt="food1"/>
                 <Texthead height="62px" width="499px"margin="-150px 0px 0px 445px">Deforestation of Bamboo </Texthead>
