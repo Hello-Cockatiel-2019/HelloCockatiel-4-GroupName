@@ -6,7 +6,7 @@ width: 649px;
 height: 134px;
 margin: -200px 0px 0px -50px;
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;

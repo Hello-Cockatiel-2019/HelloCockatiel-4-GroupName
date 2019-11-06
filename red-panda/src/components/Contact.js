@@ -7,13 +7,13 @@ height: 112px;
 margin-left: 35%;
 margin-top: 100px;
 
-font-family: Oswald;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 64px;
 line-height: 95px;
 
-color: #FFFFFF;
+color: #000000;
 `
 const Img = styled.img`
 height: ${props => props.height}
@@ -25,8 +25,8 @@ const Line = styled.div`
 width: 1300px;
 height: 0px;
 margin-left: -100px;
-background: #ffffff;
-border: 3px solid #FFFFFF;
+background: #000000;
+border: 3px solid #000000;
 transform: rotate(-0.14deg)
 `
 
@@ -34,12 +34,13 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
-                <Texthead>Contact Us</Texthead>
+                <Texthead>ติดต่อเรา</Texthead>
                 <Line />
-               <Img src="images\logosmall.jpg" width="152px" height="152px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
-                <Img src="images\kmuttJPG.jpg" width="152px" height="152px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
+          
+                <Img src="images\kmuttJPG.jpg" width="200px" height="207px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
               
-                <Img src="images\sit.png" width="268px" height="86px" margin="70px 0px 0px 50px" />
+                <Img src="images\sit.png" width="268px" height="86px" margin="70px 0px 0px 65px" />
+                <Img src="images\logosmall.jpg" width="143px" height="172px" margin="70px 0px 0px 100px" border="10px solid #FFFFFF" />
             </div>
         )
     }

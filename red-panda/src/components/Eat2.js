@@ -14,7 +14,7 @@ width: 501px;
 height: 62px;
 margin: ${props => props.margin}
 
-font-family: Teko;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 36px;

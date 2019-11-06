@@ -6,12 +6,13 @@ width: 649px;
 height: 319px;
 margin: ${props => props.margin}
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 37px;
 text-align: left;
+text-indent: 20px;
 `
 
 const Texthead = styled.div`
@@ -20,7 +21,7 @@ height: 112px;
 margin-top: 20%;
 margin-left: -50px;
 
-font-family: Oswald;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 48px;

@@ -3,8 +3,9 @@ import styled from 'styled-components'
 
 const Icon = styled.img`
 margin: ${props => props.margin}
-border: 3px solid #000000;
 padding: 10px 10px 10px 10px;
+
+background: ${props => props.background}
 `
 
 const Border = styled.div`
@@ -25,7 +26,7 @@ padding-bottom: 200px;
 margin: ${props => props.margin}
 
 
-font-family: Teko;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: bold;
 font-size: 36px;
@@ -41,7 +42,7 @@ height: ${props => props.height}
 margin: ${props => props.margin}
 padding-bottom: 300px;
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -77,13 +78,13 @@ export default class Hunter extends Component {
                 <Texthead height="112px" width="1200px" margin="-100px 0px 50px -100px">เหตุผลที่ทำไมแพนด้าแดงจึงเป็นสัตว์ใกล้สูญพันธุ์</Texthead>
                 <Text height="199px" width="649px" margin="-75px 0px 50px 150px">แพนด้าแดงกำลังเผชิญกับภัยคุกคามหลายอย่างรวมถึงการตัดไม้ทำลายป่าไม้ไผ่เพิ่มความตายจากโรคไข้หัดสุนัขเนื่องจากการบุกรุก ของมนุษย์การสูญเสียที่อยู่อาศัยและการลักลอบล่าสัตว์ </Text>
                 
-                <Icon src="images\food.jpg" margin="-200px 300px 0px 250px" alt="food1"/>
+                <Icon src="images\treerecovery.png" background="#6FC66D" margin="-200px 300px 0px 250px" alt="treerecovery"/>
                 <Texthead height="62px" width="600px"margin="-140px 0px 0px 300px">การตัดไม้ทำลายป่าของไม้ไผ่</Texthead>
                 
-                <Icon src="images\food.jpg" margin="-100px 300px 0px 250px" alt="food2"/>
+                <Icon src="images\building.png" background="#FF5752" margin="-100px 300px 0px 250px" alt="building.png"/>
                 <Texthead height="62px" width="499px"margin="-90px 0px 0px 270px">สูญเสียที่อยู่อาศัย</Texthead>
                 
-                <Icon src="images\food.jpg" margin="-100px 300px 0px 250px" alt="food3"/>
+                <Icon src="images\excavator.png" background="#FB7E49" margin="-100px 300px 0px 250px" alt="excavator"/>
                 <Texthead height="62px" width="499px"margin="-90px 0px 0px 210px">การรุกล้ำ</Texthead>
             </div>
         )

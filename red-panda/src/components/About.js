@@ -6,7 +6,7 @@ width: 566px;
 height: 112px;
 padding-bottom: 150px;
 
-font-family: Oswald;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
@@ -18,22 +18,22 @@ const Text = styled.div`
 width: 649px;
 height: 64px;
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 37px;
+text-indent: 10px;
 
 color: #000000;
 `
 const Texticon = styled.div`
-position: absolute;
 width: 250px;
 height: 62px;
 margin: ${props => props.margin}
 
 
-font-family: Teko;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;

@@ -8,7 +8,7 @@ padding-bottom: 100px;
 margin-top: 10%;
 margin-left: 5%;
 
-font-family: Oswald;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
@@ -21,7 +21,7 @@ width: 649px;
 height: 152px;
 margin: ${props => props.margin}
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
