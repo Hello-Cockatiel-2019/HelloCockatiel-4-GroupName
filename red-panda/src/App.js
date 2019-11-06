@@ -11,10 +11,6 @@ import Sit from './components/Sit'
 import Logosmall from './components/Logosmall'
 import About from './components/About'
 import Location from './components/Location'
-const Spacer = styled.div`
-height: 400px;
-
-`
 import Desktop from './components/Desktop'
 import Help from './components/Help'
 import Contact from './components/Contact'
@@ -22,7 +18,6 @@ import Hunter from './components/Hunter'
 import Repro1 from './components/Repro1'
 import Repro2 from './components/Repro2'
 import Pet1 from './components/Pet1'
-import Pet2 from './components/Pet2'
 import Pet3 from './components/Pet3'
 import Behavior1 from './components/Behavior1'
 import Behavior2 from './components/Behavior2'
@@ -46,7 +41,7 @@ const PropsBox = styled.div(props => ({
   background: props.background,
   height: '1224px',
   width: '99px',
-  position: 'absolute',
+
   margin: props.margin,
 }));
 
@@ -105,11 +100,11 @@ function App() {
 
       </Propsdiv> */}
      
-      <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
-      
+     <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
+     <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
       <div class="container">
-      <PropsBox background="#F78A68" margin="0px 0px 0px -400px"/>
-      <PropsBox background="#4F4F4F" margin="0px 0px 0px -250px" />
+      {/* <PropsBox background="#F78A68" margin="0px 0px 0px -400px"/>
+      <PropsBox background="#4F4F4F" margin="-1225px 0px 0px -250px" /> */}
 
   <div class="row align-items-start">
     <div class="col-lg-9">
@@ -120,34 +115,35 @@ function App() {
      
     </div>
     <div class="col-lg-1">
-    <Kmutt />
+ <Kmutt />
     </div>
     <div class="col-lg-1">
-    <Sit />
+  <Sit />
     </div>
   </div>
+
   <div class="row align-items-center">
    
     <div class="col-lg-auto">
-      <LogoRedpanda />
+    <LogoRedpanda />
     </div>
   
   </div>
-  <PropsBox background="#F78A68" margin="-990px 0px 0px 1260px" />
-<PropsBox background="#4F4F4F" margin="-990px 0px 0px 1410px" />
+  {/* <PropsBox background="#4F4F4F" margin="-2190px 0px 0px 1260px" />
+<PropsBox background="#F78A68" margin="-1225px 0px 0px 1410px" /> */}
 </div>
-
+</ScrollAnimation>
 
    </Propsdiv>
-   
+
    <Burger />
-      <ScrollAnimation animateIn="fadeIn"><Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
+      <Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
     
       <div class="container">
    
         <div class="row">
           
-        <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" />
+        <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}> <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" /></ScrollAnimation>
         <div class="col-md-auto">
       </div>
           <div class="col-md-4">
@@ -158,17 +154,18 @@ function App() {
   
       
    </Propsdiv>
-      </ScrollAnimation>
+      
       <Propsdiv class="Possition" padding="0px 0px 400px 0px">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <Img src="images\map.png" width="950px" height="1100px" margin="0px 0px 0px -400px" />
-              <Img src="images\place.png" width="50px" height="50px" margin="-1200px 0px 0px 0px" />
-              <Text margin="-675px 0px 0px -300px">เทือกเขาหิมาลัย</Text>
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}><Img src="images\map.png" width="950px" height="1100px" margin="0px 0px 0px -400px" />
+           <Img src="images\place.png" width="50px" height="50px" margin="-1200px 0px 0px 0px" />
+           <Text margin="-675px 0px 0px -300px">เทือกเขาหิมาลัย</Text>
+           </ScrollAnimation>
             </div>
             <div class="col-md-6">
-<Live />
+            <ScrollAnimation animateIn="fadeInRight" duration={5} animateOnce={true}><Live />  </ScrollAnimation>
             </div>
           </div>
         </div>
@@ -177,13 +174,13 @@ function App() {
       <Propsdiv class="Eat" padding="400px 0px 0px 0px">
       <div class="container">
       <div class="row">
-      <div class="col-md-6"><Img src="images\pandaeat.jpg" width="553px" height="570px" margin="0px 0px 0px -100px" /></div>
+      <div class="col-md-6"><ScrollAnimation animateIn="fadeInDown" animateOnce={true}><Img src="images\pandaeat.jpg" width="553px" height="570px" margin="0px 0px 0px -100px" /></ScrollAnimation></div>
       <div class="col-md-6"><Eat1 /></div>
       <div class="row">
-      <div class="col-md-auto"><Eat2 /></div>
+      <div class="col-md-auto"><ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Eat2 /> </ScrollAnimation></div>
       </div>
       <div class="row">
-      <div class="col-md-auto"><Eat3 /></div>
+      <div class="col-md-auto"><ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Eat3 /> </ScrollAnimation></div>
       </div>
       </div>  
       </div>  
@@ -191,17 +188,17 @@ function App() {
       <Propsdiv class="Behavior" padding="500px 0px 0px 0px">
     <div class="container">
       <div class="row">
-        <div class="col-md"><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -75px"/></div>
+        <div class="col-md"><ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -75px"/></ScrollAnimation></div>
         <div class="col-md"><Behavior1 /></div>
       </div>
       <div class="row">
         <div class="col-md">
-          <Img src="images/redpanda1.jpg" alt="redpandastand" width="390px" height="306px" margin="0px 0px 0px 0px"/>
-<Behavior2 />
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Img src="images/redpanda1.jpg" alt="redpandastand" width="390px" height="306px" margin="0px 0px 0px 0px"/>
+<Behavior2 /></ScrollAnimation>
         </div>
         <div class="col-md">
-          <Img src="images/redpanda2.jpg" alt="redpandastand" width="468px" height="306px" margin="0px 0px 0px 0px"/>
-<Behavior3 />
+        <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true}><Img src="images/redpanda2.jpg" alt="redpandastand" width="468px" height="306px" margin="0px 0px 0px 0px"/>
+<Behavior3 /></ScrollAnimation>
           </div>
       </div>
       </div> 
@@ -211,7 +208,7 @@ function App() {
           <div class="row">
             <div class="col-md">
               <Repro1 />
-  <Img src="images\redpanda3.jpg" alt="redpanda3" width="486px" height="477px" margin="-250px 0px 0px 600px" />
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Img src="images\redpanda3.jpg" alt="redpanda3" width="486px" height="477px" margin="-250px 0px 0px 650px" /></ScrollAnimation>
             </div>
             <div class="w-100"/>
             <div class="col-md">
@@ -225,7 +222,7 @@ function App() {
         <div class="container">
           <div class="row">
             <div class="col-md-auto">
-            <Img src="images\redpanda4.jpg" alt="redpanda5" width="345px" height="376px" margin="0px 0px 0px -100px" />
+            <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Img src="images\redpanda4.jpg" alt="redpanda5" width="345px" height="376px" margin="0px 0px 0px -100px" /></ScrollAnimation>
             </div>
             <div class="col-md-auto">
            

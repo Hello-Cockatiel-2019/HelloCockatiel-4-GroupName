@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Icon = styled.img`
 margin: ${props => props.margin}
@@ -46,30 +48,30 @@ export default class Pet3 extends Component {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg">
-                            <Texthead>เหตุผลที่ไม่ควรเลี้ยงแพนด้าแดง</Texthead>
+                        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>           <Texthead>เหตุผลที่ไม่ควรเลี้ยงแพนด้าแดง</Texthead></ScrollAnimation>
                         </div>
                     </div>
-  <div class="row">
-    <div class="col-md"><Icon src="images\bamboo.png" margin="0px 0px 50px 0px" alt="food1" background="#009B68"/></div>
-    <Text margin="10px 0px 0px -300px">กินต้นไผ่เป็นจำนวนมาก</Text>
-    <div class="col-md"><Icon src="images\home.png" margin="0px 0px 50px 0px" alt="food2" background="#C69C6D" /></div>
-    <Text margin="10px -200px 0px -300px">ต้องการที่อยู่ขนาดใหญ่</Text>
+    <div class="row">
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\bamboo.png" margin="0px 0px 50px 0px" alt="icon1" background="#009B68"/></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px 0px 0px -300px">กินต้นไผ่เป็นจำนวนมาก</Text></ScrollAnimation>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\home.png" margin="0px 0px 50px 0px" alt="icon2" background="#C69C6D" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px -200px 0px -300px">ต้องการที่อยู่ขนาดใหญ่</Text></ScrollAnimation>
     
     <div class="w-100"></div>
-    <div class="col-md"><Icon src="images\plus.png" margin="0px 0px 50px 0px" alt="food3" background="#FF5752" /></div>
-    <Text margin="10px 0px 0px -300px">การรักษา</Text>
-    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food4" background="" /></div>
-    <Text margin="10px -200px 0px -300px">กลิ่นแรง</Text>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\plus.png" margin="0px 0px 50px 0px" alt="icon3" background="#FF5752" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px 0px 0px -300px">การรักษา</Text></ScrollAnimation>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\smell.png" margin="0px 0px 50px 0px" alt="icon4" background="#6FC66D" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px -200px 0px -300px">กลิ่นแรง</Text></ScrollAnimation>
     <div class="w-100"></div>
-    <div class="col-md"><Icon src="images\moon.png" margin="0px 0px 50px 0px" alt="food5" background="#346491" /></div>
-    <Text margin="10px 0px 0px -300px">ออกหากินเวลากลางคืน</Text>
-    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food6" background="" /></div>
-    <Text margin="10px -200px 0px -300px">รุกราน</Text>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\moon.png" margin="0px 0px 50px 0px" alt="icon5" background="#346491" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px 0px 0px -300px">ออกหากินเวลากลางคืน</Text></ScrollAnimation>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\flash.png" margin="0px 0px 50px 0px" alt="icon6" background="#FB7E49" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px -200px 0px -300px">รุกราน</Text></ScrollAnimation>
     <div class="w-100"></div>
-    <div class="col-md"><Icon src="images\scales.png" margin="0px 0px 50px 0px" alt="food7" background="#FFC93F" /></div>
-    <Text margin="10px 0px 0px -300px">ผิดกฎหมาย</Text>
-    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food8"/></div>
-    <Text margin="10px -200px 0px -300px">สัตว์ใกล้สูญพันธุ์</Text>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\scales.png" margin="0px 0px 50px 0px" alt="icon7" background="#FFC93F" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px 0px 0px -300px">ผิดกฎหมาย</Text></ScrollAnimation>
+    <div class="col-md"> <ScrollAnimation animateIn="fadeInUp" animateOnce={true}> <Icon src="images\search.png" margin="0px 0px 50px 0px" alt="icon8" background="#FB70C0" /></ScrollAnimation></div>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Text margin="10px -200px 0px -300px">สัตว์ใกล้สูญพันธุ์</Text></ScrollAnimation>
   </div>
 </div>
                 {/* <Icon src="images\food.jpg" margin="-200px 300px 0px 350px" alt="food1"/>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Texthead = styled.div`
 width: 800px;
@@ -34,8 +36,8 @@ export default class Pet extends Component {
     render() {
         return (
             <div>
-                <Texthead>สามารถนำแพนด้าแดงมาเป็นสัตว์เลี้ยง</Texthead>
-                <Text margin="0px 0px 0px 50px">ถึงแม้ว่าหมีแพนด้าสีแดงน่ารักและดูน่ากอดและสายพันธุ์ที่ดีในการ ถูกจองจำมีหลายเหตุผลที่ไม่ใช่สัตว์เลี้ยงทั่วไป</Text>
+                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true}><Texthead>สามารถนำแพนด้าแดงมาเป็นสัตว์เลี้ยง</Texthead></ScrollAnimation>
+                 <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true}><Text margin="0px 0px 0px 50px">ถึงแม้ว่าหมีแพนด้าสีแดงน่ารักและดูน่ากอดและสายพันธุ์ที่ดีในการ ถูกจองจำมีหลายเหตุผลที่ไม่ใช่สัตว์เลี้ยงทั่วไป</Text></ScrollAnimation>
            
             </div>
         )

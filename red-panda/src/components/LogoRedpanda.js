@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+
 const Textbox = styled.div`
 width: 514px;
 height: 150px;
 margin-left: 50%;
-margin-top: 15%;
+margin-top: 5%;
 
 font-family: Staatliches;
 font-style: normal;
