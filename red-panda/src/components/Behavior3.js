@@ -24,7 +24,7 @@ export default class Behavior3 extends Component {
     render() {
         return (
             <div>
-                <Text>เมื่ออากาศร้อนมันจะนอนเหยียดขา บนกิ่งไม้และทำให้ขาของมันเย็นลง</Text>
+                <Text>เมื่ออากาศเย็นมาจะนอนขดตัวเเละ เเละนำหางขนฟูของมันพันรอบตัว</Text>
             </div>
         )
     }

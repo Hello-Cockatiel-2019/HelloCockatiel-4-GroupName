@@ -12,7 +12,7 @@ export default class KmuttSit extends Component {
         return (
             <div>
                   
-                  <Sit src="/images/Sit.png" alt="SIT" />
+                  <Sit src="/images/Sit.jpg" alt="SIT" />
         
                   </div>
         )

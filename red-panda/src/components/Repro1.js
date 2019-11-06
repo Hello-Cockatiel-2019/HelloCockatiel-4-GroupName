@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Texthead = styled.div`
 width: 800px;
@@ -34,8 +36,8 @@ export default class Pet extends Component {
     render() {
         return (
             <div>
-                <Texthead>การเจริญพันธุ์</Texthead>
-                <Text margin="0px 0px 0px -50px">แพนด้าแดงโตเต็มที่เมื่ออายุสอง ถึงสามปี ตัวเมียรวบรวมหญ้าและใบไม้เพื่อสร้างรัง ก่อนคลอดลูก เด็กเเรกเกิดจะหูหนวกและตาบอด แม่ใช้เวลาตลอดเวลากับลูกหนึ่งสัปดาห์ จากนั้นแม่ก็จะเริ่มออกไปหาอาหาร </Text>
+                <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>  <Texthead>การเจริญพันธุ์</Texthead></ScrollAnimation>
+                <ScrollAnimation animateIn="fadeInLeft" delay={500} animateOnce={true}> <Text margin="0px 0px 0px -50px">แพนด้าแดงโตเต็มที่เมื่ออายุสอง ถึงสามปี ตัวเมียรวบรวมหญ้าและใบไม้เพื่อสร้างรัง ก่อนคลอดลูก เด็กเเรกเกิดจะหูหนวกและตาบอด แม่ใช้เวลาตลอดเวลากับลูกหนึ่งสัปดาห์ จากนั้นแม่ก็จะเริ่มออกไปหาอาหาร </Text></ScrollAnimation>
            
             </div>
         )
