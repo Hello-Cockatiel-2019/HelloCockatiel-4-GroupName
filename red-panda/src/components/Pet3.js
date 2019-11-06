@@ -50,25 +50,25 @@ export default class Pet3 extends Component {
                         </div>
                     </div>
   <div class="row">
-    <div class="col-lg"><Icon src="images\bamboo.png" margin="0px 0px 50px 0px" alt="food1" background="#009B68"/></div>
+    <div class="col-md"><Icon src="images\bamboo.png" margin="0px 0px 50px 0px" alt="food1" background="#009B68"/></div>
     <Text margin="10px 0px 0px -300px">กินต้นไผ่เป็นจำนวนมาก</Text>
-    <div class="col-lg"><Icon src="images\home.png" margin="0px 0px 50px 0px" alt="food2" background="#C69C6D" /></div>
+    <div class="col-md"><Icon src="images\home.png" margin="0px 0px 50px 0px" alt="food2" background="#C69C6D" /></div>
     <Text margin="10px -200px 0px -300px">ต้องการที่อยู่ขนาดใหญ่</Text>
     
     <div class="w-100"></div>
-    <div class="col-lg"><Icon src="images\plus.png" margin="0px 0px 50px 0px" alt="food3" background="#FF5752" /></div>
+    <div class="col-md"><Icon src="images\plus.png" margin="0px 0px 50px 0px" alt="food3" background="#FF5752" /></div>
     <Text margin="10px 0px 0px -300px">การรักษา</Text>
-    <div class="col-lg"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food4" background="" /></div>
+    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food4" background="" /></div>
     <Text margin="10px -200px 0px -300px">กลิ่นแรง</Text>
     <div class="w-100"></div>
-    <div class="col-lg"><Icon src="images\moon.png" margin="0px 0px 50px 0px" alt="food5" background="#346491" /></div>
+    <div class="col-md"><Icon src="images\moon.png" margin="0px 0px 50px 0px" alt="food5" background="#346491" /></div>
     <Text margin="10px 0px 0px -300px">ออกหากินเวลากลางคืน</Text>
-    <div class="col-lg"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food6" background="" /></div>
+    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food6" background="" /></div>
     <Text margin="10px -200px 0px -300px">รุกราน</Text>
     <div class="w-100"></div>
-    <div class="col-lg"><Icon src="images\scales.png" margin="0px 0px 50px 0px" alt="food7" background="#FFC93F" /></div>
+    <div class="col-md"><Icon src="images\scales.png" margin="0px 0px 50px 0px" alt="food7" background="#FFC93F" /></div>
     <Text margin="10px 0px 0px -300px">ผิดกฎหมาย</Text>
-    <div class="col-lg"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food8"/></div>
+    <div class="col-md"><Icon src="images\food.jpg" margin="0px 0px 50px 0px" alt="food8"/></div>
     <Text margin="10px -200px 0px -300px">สัตว์ใกล้สูญพันธุ์</Text>
   </div>
 </div>

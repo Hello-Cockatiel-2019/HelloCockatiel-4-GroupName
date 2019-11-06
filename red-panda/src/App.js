@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+
 import LogoRedpanda from './components/LogoRedpanda'
 import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
@@ -27,6 +29,9 @@ import Behavior2 from './components/Behavior2'
 import Behavior3 from './components/Behavior3'
 import Live from './components/Live'
 import Eat1 from './components/Eat1'
+import Eat2 from './components/Eat2'
+import Eat3 from './components/Eat3'
+import Burger from './components/Burger'
 
 const Rightcorner = styled.div`
 position: absolute;
@@ -81,20 +86,11 @@ font-size: 24px;
 line-height: 34px;
 text-align: center;
 `
-const Navtext = styled.p`
-margin-top: 5px;
-margin-bottom: -5px;
-margin-left: 45%;
 
-font-family: Teko;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-text-align: center;
 
-color: #ffffff;
-`
+  
 function App() {
+
   return (
     <div>
       {/* <Propsdiv class="Desktop1" padding="0px 0px 0px 0px">
@@ -108,6 +104,7 @@ function App() {
       </div>
 
       </Propsdiv> */}
+     
       <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
       
       <div class="container">
@@ -142,18 +139,15 @@ function App() {
 
 
    </Propsdiv>
-
-   <nav class="navbar sticky-top navbar-dark bg-dark">
-  <Navtext>Red Panda</Navtext>
-</nav>
-      
+   <Burger />
       <ScrollAnimation animateIn="fadeIn"><Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
+    
       <div class="container">
         <div class="row">
         <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" />
-        <div class="col-lg-auto">
+        <div class="col-md-auto">
       </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
       <About  />
       </div>
       </div>
@@ -165,84 +159,84 @@ function App() {
       <Propsdiv class="Possition" padding="0px 0px 400px 0px">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <Img src="images\map.png" width="950px" height="1100px" margin="0px 0px 0px -400px" />
               <Img src="images\place.png" width="50px" height="50px" margin="-1200px 0px 0px 0px" />
               <Text margin="-675px 0px 0px -300px">เทือกเขาหิมาลัย</Text>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
 <Live />
             </div>
           </div>
         </div>
       </Propsdiv> 
 
-      <Propsdiv class="Eat" padding="400px 0px 400px 0px">
+      <Propsdiv class="Eat" padding="400px 0px 0px 0px">
       <div class="container">
       <div class="row">
-      <div class="col-lg-6"><Img src="images\pandaeat.jpg" width="553px" height="570px" margin="0px 0px 0px 0px" /></div>
-      <div class="col-lg-6"><Eat1 /></div>
+      <div class="col-md-6"><Img src="images\pandaeat.jpg" width="553px" height="570px" margin="0px 0px 0px -100px" /></div>
+      <div class="col-md-6"><Eat1 /></div>
       <div class="row">
-      <div class="col-lg">icon</div>
+      <div class="col-md-auto"><Eat2 /></div>
       </div>
       <div class="row">
-      <div class="col-lg">content</div>
+      <div class="col-md-auto"><Eat3 /></div>
       </div>
       </div>  
       </div>  
       </Propsdiv> 
-      <Propsdiv class="Behavior" padding="400px 0px 400px 0px">
+      <Propsdiv class="Behavior" padding="500px 0px 0px 0px">
     <div class="container">
       <div class="row">
-        <div class="col-lg"><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -100px"/></div>
-        <div class="col-lg"><Behavior1 /></div>
+        <div class="col-md"><Img src="images/redpandastand.jpg" alt="redpandastand" width="437px" height="598px" margin="0px 0px 0px -75px"/></div>
+        <div class="col-md"><Behavior1 /></div>
       </div>
       <div class="row">
-        <div class="col-lg">
+        <div class="col-md">
           <Img src="images/redpanda1.jpg" alt="redpandastand" width="390px" height="306px" margin="0px 0px 0px 0px"/>
 <Behavior2 />
         </div>
-        <div class="col-lg">
+        <div class="col-md">
           <Img src="images/redpanda2.jpg" alt="redpandastand" width="468px" height="306px" margin="0px 0px 0px 0px"/>
 <Behavior3 />
           </div>
       </div>
       </div> 
       </Propsdiv>
-      <Propsdiv class="Reproduction" padding="0px 0px 400px 0px">
+      <Propsdiv class="Reproduction" padding="400px 0px 0px 0px">
         <div class="container">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-md">
               <Repro1 />
   <Img src="images\redpanda3.jpg" alt="redpanda3" width="486px" height="477px" margin="-250px 0px 0px 600px" />
             </div>
             <div class="w-100"/>
-            <div class="col-lg">
+            <div class="col-md">
              <Repro2 />
             </div>
             </div>
           </div>
        
       </Propsdiv>
-      <Propsdiv class="Pet" padding="0px 0px 400px 0px">
+      <Propsdiv class="Pet" padding="400px 0px 0px 0px">
         <div class="container">
           <div class="row">
-            <div class="col-lg-auto">
+            <div class="col-md-auto">
             <Img src="images\redpanda4.jpg" alt="redpanda5" width="345px" height="376px" margin="0px 0px 0px -100px" />
             </div>
-            <div class="col-lg-auto">
+            <div class="col-md-auto">
            
            
              <Pet1 />
             </div>
             <div class="row">
-            <div class="col-lg-auto">
+            <div class="col-md-auto">
               <Pet3 />
             </div>
-            <div class="col-lg-auto">
+            <div class="col-md-auto">
             </div>
             <div class="row">
-            <div class="col-lg-auto">
+            <div class="col-md-auto">
               
             </div>
             </div>
@@ -250,10 +244,10 @@ function App() {
           </div>
         </div>
       </Propsdiv>
-      <Propsdiv class="Hunters" padding="0px 0px 400px 0px">
+      <Propsdiv class="Hunters" padding="400px 0px 0px 0px">
     <div class="container">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-md">
               <Hunter />            
             </div>
           </div>
@@ -264,7 +258,7 @@ function App() {
       
         <div class="container">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-md">
               <Help />
             </div>
           </div>
@@ -275,7 +269,7 @@ function App() {
       <Propsdivcolor2 class="ContactUs">
       <div class="container">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-md">
               <Contact />
             </div>
           </div>
