@@ -10,6 +10,11 @@ import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
 import Logosmall from './components/Logosmall'
 import About from './components/About'
+import Location from './components/Location'
+const Spacer = styled.div`
+height: 400px;
+
+`
 import Desktop from './components/Desktop'
 import Help from './components/Help'
 import Contact from './components/Contact'
@@ -34,6 +39,7 @@ position: absolute;
   right: 16px;
   font-size: 18px;
   margin: ${props => props.margin}
+
 `
 
 const PropsBox = styled.div(props => ({
