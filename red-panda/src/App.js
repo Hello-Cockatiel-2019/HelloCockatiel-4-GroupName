@@ -165,7 +165,7 @@ function App() {
            </ScrollAnimation>
             </div>
             <div class="col-md-6">
-            <ScrollAnimation animateIn="fadeInRight" duration={5} animateOnce={true}><Live />  </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}><Live />  </ScrollAnimation>
             </div>
           </div>
         </div>
