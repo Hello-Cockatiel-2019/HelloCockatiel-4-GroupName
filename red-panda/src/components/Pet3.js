@@ -16,7 +16,7 @@ padding-top: 150px;
 margin-top: -75px;
 margin-left: 15%;
 
-font-family: Oswald;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
@@ -31,7 +31,7 @@ width: 499px;
 height: 62px;
 margin: ${props => props.margin}
 
-font-family: Teko;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 48px;

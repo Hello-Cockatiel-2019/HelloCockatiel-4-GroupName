@@ -8,7 +8,7 @@ padding-top: 0%;
 margin-top: -13%;
 margin-left: 20%;
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -24,7 +24,7 @@ height: 145px;
 margin-top: -3%;
 margin-left: 18%;
 
-font-family: Spectral;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
 font-size: 14px;

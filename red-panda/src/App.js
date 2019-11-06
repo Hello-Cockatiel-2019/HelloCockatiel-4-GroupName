@@ -58,7 +58,7 @@ background-color: #2E2E2E;
 
 `
 const Propsdivcolor2 = styled.div`
-background-color: #DE4D20;
+background-color: #ffffff;
 padding: 0px 0px 400px 0px;
 `
 const Propsdimg = styled.img(props => ({
@@ -139,11 +139,14 @@ function App() {
 
 
    </Propsdiv>
+   
    <Burger />
       <ScrollAnimation animateIn="fadeIn"><Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
     
       <div class="container">
+   
         <div class="row">
+          
         <Propsdimg src="images\redpanda.jpg" alt="redpanda" width="529.59px" height="642px" margin="0px 0px 0px -100px" />
         <div class="col-md-auto">
       </div>
