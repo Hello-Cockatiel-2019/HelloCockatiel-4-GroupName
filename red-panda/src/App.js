@@ -74,7 +74,7 @@ width: 649px;
 height: 319px;
 margin: ${props => props.margin}
 
-font-family: Teko;
+font-family: 'Kanit';
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -100,13 +100,15 @@ function App() {
 
       </Propsdiv> */}
      
-     <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
+     <Propsdiv class="Desktop2" padding="0px 0px -50px 0px">
+
+     
      <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
       <div class="container">
-      {/* <PropsBox background="#F78A68" margin="0px 0px 0px -400px"/>
-      <PropsBox background="#4F4F4F" margin="-1225px 0px 0px -250px" /> */}
+      
 
   <div class="row align-items-start">
+    
     <div class="col-lg-9">
     
     </div>
@@ -123,17 +125,24 @@ function App() {
   </div>
 
   <div class="row align-items-center">
-   
+   <div class="col-lg-auto">
+   <PropsBox background="#F78A68" margin="-200px 0px 0px -210px"/>
+      <PropsBox background="#4F4F4F" margin="-1224px 0px 0px -50px" />
+   </div>
     <div class="col-lg-auto">
+    
     <LogoRedpanda />
     </div>
-  
+    <div class="col-lg-auto">
+    <PropsBox background="#4F4F4F" margin="-1224px 0px 0px 1075px" />
+ <PropsBox background="#F78A68" margin="-1224px 0px 0px 1220px" />
+   </div>
   </div>
-  {/* <PropsBox background="#4F4F4F" margin="-2190px 0px 0px 1260px" />
-<PropsBox background="#F78A68" margin="-1225px 0px 0px 1410px" /> */}
-</div>
-</ScrollAnimation>
 
+</div>
+
+</ScrollAnimation>
+ 
    </Propsdiv>
 
    <Burger />

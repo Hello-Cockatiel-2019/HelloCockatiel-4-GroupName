@@ -36,7 +36,7 @@ margin: ${props => props.margin}
 font-family: 'Kanit';
 font-style: normal;
 font-weight: normal;
-font-size: 48px;
+font-size: 38px;
 line-height: 69px;
 
 color: #000000;

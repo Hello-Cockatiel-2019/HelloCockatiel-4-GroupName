@@ -36,6 +36,7 @@ height: ${props => props.height}
 width: ${props => props.width}
 margin: ${props => props.margin}
 border: ${props => props.border}
+
 `
 const Line = styled.div`
 width: 1300px;
@@ -52,12 +53,12 @@ export default class Contact extends Component {
             <div>
                 <Texthead>ติดต่อเรา</Texthead>
                 <Line />
-                <Img src="images\facebook.jpg" width="102px" height="102px" margin="70px 0px 0px 0px" border="10px solid #FFFFFF" />
-                <Img src="images\twitter.jpg" width="102px" height="102px" margin="70px 0px 0px 50px" border="10px solid #FFFFFF" />
-                <Img src="images\kmuttJPG.jpg" width="200px" height="207px" margin="30px 0px 0px 50px" border="10px solid #FFFFFF" />
+                <a href="https://www.facebook.com/KMUTT/"><Img src="images\facebook.jpg" width="102px" height="102px" margin="70px 0px 0px 0px" border="10px solid #FFFFFF" /></a>
+                <a href="https://twitter.com/KMUTT"><Img src="images\twitter.jpg" width="102px" height="102px" margin="70px 0px 0px 50px" border="10px solid #FFFFFF" /></a>
+                <a href="http://www2.kmutt.ac.th/index.aspx"><Img src="images\kmuttJPG.jpg" width="200px" height="207px" margin="30px 0px 0px 50px" border="10px solid #FFFFFF" /></a>
               
-                <Img src="images\sit.jpg" width="268px" height="86px" margin="70px 0px 0px 50px" />
-                <Img src="images\logosmall.jpg" width="143px" height="172px" margin="10px 0px 0px 50px" border="10px solid #FFFFFF" />
+                <a href="https://www.sit.kmutt.ac.th/"><Img src="images\sit.jpg" width="268px" height="86px" margin="70px 0px 0px 50px" /></a>
+                <a href="https://worldofredpanda.com"><Img src="images\logosmall.jpg" width="143px" height="172px" margin="10px 0px 0px 50px" border="10px solid #FFFFFF" /></a>
                 <Text>126 ถนนประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140 โทรศัพท์ 0-2470-8000 โทรสาร 0-2427-8412</Text>
             </div>
         )

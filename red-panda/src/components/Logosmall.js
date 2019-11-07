@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Logosmall = styled.img`
-width: 94px;
-height: 94px;
-margin-top 30px;
-margin-left: -75px;
+width: 80px;
+height: 80px;
+margin-top 50px;
+margin-left: -230%;
 `
 export default class Logo extends Component {
     render() {
