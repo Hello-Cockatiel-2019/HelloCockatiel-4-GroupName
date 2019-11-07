@@ -103,7 +103,7 @@ function App() {
      <Propsdiv class="Desktop2" padding="0px 0px -50px 0px">
 
      
-     <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
+     <ScrollAnimation animateIn="fadeInDown" duration={3} animateOnce={true}>
       <div class="container">
       
 
@@ -126,16 +126,27 @@ function App() {
 
   <div class="row align-items-center">
    <div class="col-lg-auto">
-   <PropsBox background="#F78A68" margin="-200px 0px 0px -210px"/>
-      <PropsBox background="#4F4F4F" margin="-1224px 0px 0px -50px" />
+   <ScrollAnimation animateIn="fadeInDown" duration={4} animateOnce={true}>
+   <PropsBox background="#FB7E49" margin="-200px 0px 0px -210px"/>
+   </ScrollAnimation>
+   <ScrollAnimation animateIn="fadeInDown"  delay={500} duration={4} animateOnce={true}>
+      <PropsBox background="#272727" margin="-1224px 0px 0px -50px" />
+      </ScrollAnimation>
+   
    </div>
     <div class="col-lg-auto">
     
     <LogoRedpanda />
     </div>
     <div class="col-lg-auto">
-    <PropsBox background="#4F4F4F" margin="-1224px 0px 0px 1075px" />
- <PropsBox background="#F78A68" margin="-1224px 0px 0px 1220px" />
+    <ScrollAnimation animateIn="fadeInDown" delay={500} duration={4} animateOnce={true}>
+      
+    <PropsBox background="#272727" margin="-1224px 0px 0px 1075px" />
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="fadeInDown" duration={4} animateOnce={true}>
+ <PropsBox background="#FB7E49" margin="-1224px 0px 0px 1220px" />
+ 
+ </ScrollAnimation>
    </div>
   </div>
 
