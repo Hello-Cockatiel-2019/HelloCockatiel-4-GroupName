@@ -846,6 +846,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@>=7.0.0-beta.56":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.4.tgz#b23a856751e4bf099262f867767889c0e3fe175b"
+  integrity sha512-r24eVUUr0QqNZa+qrImUk8fn5SPhHq+IfYvIoIMg0do3GdK9sMdiLKP3GYVVaxpPKORgm8KRKaNTEhAjgIpLMw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
@@ -8283,10 +8290,10 @@ react-bootstrap@^1.0.0-beta.14:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
-react-burger-menu@^2.6.11:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-2.6.11.tgz#e9ec8db2ea156ef9366423be971ae6859ea17570"
-  integrity sha512-Nz0CpcQBE4kgxI/xWviyHGQM8PS4GYlsxd8oUGuOabEweYzVJeFhGbHQlM2a/1SMeWM90S80vEvpI22/wFFifA==
+react-burger-menu@^2.6.13:
+  version "2.6.13"
+  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-2.6.13.tgz#51b86eb35076c5fbe80027e2ce4c58bd6708f724"
+  integrity sha512-tloQs8F2+YHR/FYfQpu4z+OQzgGHzUZYZXBxGmb6/6eckjQ1GvzeNpHp4IZigpe0ovamg1HgDRK3qNlOPezjlA==
   dependencies:
     browserify-optional "^1.0.0"
     classnames "^2.2.6"
@@ -8442,6 +8449,14 @@ react-scripts@^3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
+react-sidebar@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-sidebar/-/react-sidebar-3.0.2.tgz#cf695b5a78098e70460c847fb0c6c81cfd896c37"
+  integrity sha512-LG/JO1cJvdRqSmUT+DOhJrml/b45/UqM9nm8emcgbJb5EKNegKCObZcrRqyzVix42VfFf0odytviAAFEYYTu1Q==
+  dependencies:
+    "@babel/runtime" ">=7.0.0-beta.56"
+    prop-types "^15.6.2"
+
 react-spacer@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-spacer/-/react-spacer-1.2.0.tgz#54770f9eebc7a2bf1a1f41fdeea30bfbc0d5963f"
@@ -8544,6 +8559,11 @@ recursive-readdir@2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
+
+redux-burger-menu@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/redux-burger-menu/-/redux-burger-menu-0.2.8.tgz#3d487a708ac360ddd55817580cac9e6a0a8db154"
+  integrity sha512-hzMPsmKF0QcMFYU/u/yC8Du0f0tZh3O88Usm1GI9h/xLTNGm248PEuCsVN6JCKHhdSTYt33d9Ir3edzHQGrqaw==
 
 regenerate-unicode-properties@^8.1.0:
   version "8.1.0"

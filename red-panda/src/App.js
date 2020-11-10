@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+
+
 import LogoRedpanda from './components/LogoRedpanda'
 import Kmutt from './components/Kmutt'
 import Sit from './components/Sit'
@@ -26,7 +28,7 @@ import Live from './components/Live'
 import Eat1 from './components/Eat1'
 import Eat2 from './components/Eat2'
 import Eat3 from './components/Eat3'
-import Burger from './components/Burger'
+import Nav from './components/Nav'
 
 const Rightcorner = styled.div`
 position: absolute;
@@ -88,17 +90,7 @@ function App() {
 
   return (
     <div>
-      {/* <Propsdiv class="Desktop1" padding="0px 0px 0px 0px">
-<Rightcorner margin="0px 300px 0px 0px"><Kmutt /></Rightcorner><Rightcorner margin="0px 200px 0px 0px"><Sit /></Rightcorner>
-      <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-        <Desktop />
-        </div>
-      </div>
-      </div>
-
-      </Propsdiv> */}
+    
      
      <Propsdiv class="Desktop2" padding="0px 0px 400px 0px">
      <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
@@ -136,7 +128,10 @@ function App() {
 
    </Propsdiv>
 
-   <Burger />
+   <Nav> 
+    
+      </Nav>
+ 
       <Propsdiv class="AboutRedpanda" padding="200px 0px 400px 0px">
     
       <div class="container">

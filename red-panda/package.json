@@ -11,10 +11,12 @@
     "react": "^16.11.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-burger-menu": "^2.6.11",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.11.0",
     "react-scripts": "^3.2.0",
+    "react-sidebar": "^3.0.2",
     "react-spacer": "^1.2.0",
+    "redux-burger-menu": "^0.2.8",
     "scroll": "^3.0.1",
     "styled-components": "^4.4.0"
   },
